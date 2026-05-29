@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jesse Boss Fight</title>
+<style>
+body{margin:0;background:#000;color:#fff;font-family:Arial;overflow:hidden;text-align:center}
+#menu,#loading,#victory,#gameover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#000}
+#loading,#victory,#gameover,#game{display:none}
+.ship{width:90px;margin:10px;border:2px solid white}
+#controls{position:absolute;bottom:10px;width:100%;display:none;justify-content:space-around}
+button{font-size:28px;width:90px;height:70px}
+</style></head><body>
+<div id=menu><h1>Choose Your Ship</h1>
+<img class=ship src='assets/ship1.png' onclick='pick(1)'>
+<img class=ship src='assets/ship2.png' onclick='pick(2)'>
+<img class=ship src='assets/ship3.png' onclick='pick(3)'>
+</div>
+<div id=loading><h1>⚠ Entering the Battle of Jesse the Jerk ⚠</h1></div>
+<canvas id=game></canvas>
+<div id=controls><button id=l>◀</button><button id=f>🔥</button><button id=r>▶</button></div>
+<div id=victory><h1>🎉 You Defeated Jesse! 🎉</h1></div>
+<div id=gameover><h1>Game Over</h1></div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src=game.js></script></body></html>
