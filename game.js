@@ -1,0 +1,1 @@
+alert('Template project loaded. Replace assets and continue development.');
